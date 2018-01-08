@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "staging": "servisnow-e2a62",
+    "default": "servisnow-e2a62"
+  }
+}
