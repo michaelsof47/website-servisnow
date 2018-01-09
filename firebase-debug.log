@@ -1,0 +1,48 @@
+[debug] [2017-12-18T13:23:32.563Z] ----------------------------------------------------------------------
+[debug] [2017-12-18T13:23:32.576Z] Command:       /usr/bin/nodejs /usr/bin/firebase serve
+[debug] [2017-12-18T13:23:32.578Z] CLI Version:   3.16.0
+[debug] [2017-12-18T13:23:32.579Z] Platform:      linux
+[debug] [2017-12-18T13:23:32.579Z] Node Version:  v7.10.1
+[debug] [2017-12-18T13:23:32.579Z] Time:          Mon Dec 18 2017 20:23:32 GMT+0700 (WIB)
+[debug] [2017-12-18T13:23:32.580Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-12-18T13:23:32.639Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-12-18T13:23:32.640Z] > authorizing via signed-in user
+[debug] [2017-12-18T13:23:32.650Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-12-18T13:23:32.652Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/uc7DmRjLLXP6ZzTzOF0THATnJTjbhKX-_4mUdV5ftx-7Nw0xmraDHK3Gce3ltGcW',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Mon Dec 18 2017 20:23:32 GMT+0700 (WIB)
+[debug] [2017-12-18T13:23:33.436Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-18T13:23:33.528Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/servisnow-e2a62  
+  
+ Mon Dec 18 2017 20:23:33 GMT+0700 (WIB)
+[debug] [2017-12-18T13:23:35.517Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-18T13:23:35.521Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/servisnow-e2a62/tokens  
+  
+ Mon Dec 18 2017 20:23:35 GMT+0700 (WIB)
+[debug] [2017-12-18T13:23:37.153Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/opt/lampp/htdocs/servisnowLama'...
+[info] 
+[debug] [2017-12-18T13:23:37.170Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/servisnow-e2a62  
+  
+ Mon Dec 18 2017 20:23:37 GMT+0700 (WIB)
+[debug] [2017-12-18T13:23:38.670Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-18T13:23:38.672Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/191615817925/clients/_:getWebAppConfig  
+  
+ Mon Dec 18 2017 20:23:38 GMT+0700 (WIB)
+[debug] [2017-12-18T13:23:46.090Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-18T13:23:46.164Z] TypeError: Cannot read property 'public' of undefined
+    at Server.<anonymous> (/usr/lib/node_modules/firebase-tools/lib/serve/hosting.js:34:17)
+    at Object.onceWrapper (events.js:293:19)
+    at emitNone (events.js:86:13)
+    at Server.emit (events.js:188:7)
+    at emitListeningNT (net.js:1286:10)
+    at _combinedTickCallback (internal/process/next_tick.js:77:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:128:9)
+[error] 
+[error] Error: An unexpected error has occurred.
